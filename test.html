@@ -13256,14 +13256,11 @@ div#notebook {
 <span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="n">widgets</span><span class="p">,</span> <span class="n">interactive</span>
 <span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">widgets</span>
 <span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="n">interact</span><span class="p">,</span> <span class="n">interact_manual</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">nbinteract</span> <span class="k">as</span> <span class="nn">nbi</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="n">mean</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">sd</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="k">def</span> <span class="nf">normal</span><span class="p">(</span><span class="n">mean</span><span class="p">,</span> <span class="n">sd</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">mean</span><span class="p">,</span> <span class="n">sd</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
-<span class="n">sample</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">nomal</span><span class="p">(</span><span class="n">mean</span><span class="p">,</span><span class="n">sd</span><span class="p">))</span>
+<span class="n">sample</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">normal</span><span class="p">(</span><span class="n">mean</span><span class="p">,</span><span class="n">sd</span><span class="p">))</span>
 <span class="n">sample</span><span class="o">.</span><span class="n">columns</span><span class="o">=</span> <span class="p">[</span><span class="s1">&#39;value&#39;</span><span class="p">]</span>
 <span class="nd">@interact</span>
 <span class="k">def</span> <span class="nf">show_articles_more_than</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="s1">&#39;value&#39;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
@@ -13323,10 +13320,10 @@ div#notebook {
 
 
 
-<div id="bf669a24-3a3c-4900-9705-7523e07948db"></div>
+<div id="74bec873-7b81-4708-bc45-d0bd9c707d54"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#bf669a24-3a3c-4900-9705-7523e07948db');
+var element = $('#74bec873-7b81-4708-bc45-d0bd9c707d54');
 IPython.notebook.save_checkpoint();
 </script>
 </div>
@@ -13340,10 +13337,10 @@ IPython.notebook.save_checkpoint();
 
 
 
-<div id="072a5543-c626-49f8-ac16-303673812d51"></div>
+<div id="5530f32d-10ba-486d-8846-d2358c6cd7c1"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#072a5543-c626-49f8-ac16-303673812d51');
+var element = $('#5530f32d-10ba-486d-8846-d2358c6cd7c1');
 IPython.notebook.save_notebook();
 </script>
 </div>
